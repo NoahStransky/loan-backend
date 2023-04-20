@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  postgres:
+    image: postgis/postgis:12-master
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      - POSTGRES_USER=demyst
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=loan-db
+  backend:
+    build:
+      context: ./
+      dockerfile: dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_CLIENT=pg
+      - PG_HOST=localhost
+      - PG_PORT=5432
+      - PG_DATABASE=loan-db
+      - PG_USER=demyst
+      - PG_PASSWORD=admin
+    depends_on:
+      - postgres
