@@ -1,0 +1,11 @@
+{
+    "ENV": "development",
+    "PG": {
+        "driveName": "postgres",
+        "host": "127.0.0.1",
+        "port": 5432,
+        "user": "demyst",
+        "password": "admin",
+        "database": "loan-db"
+    }
+}
