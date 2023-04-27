@@ -1,6 +1,7 @@
 package src
 
 import (
+	"encoding/json"
 	"net/http"
 	"os"
 
@@ -13,20 +14,55 @@ import (
 )
 
 func Serve() {
-
 	engine := SetupDatabase()
+	handlerRoutes(engine)
+}
 
-	accountingProvider := controller.NewAccountingProvider(engine)
+func handlerRoutes(engine *xorm.Engine) {
+	accountingProviderController := controller.NewAccountingProvider(engine)
+	balanceController := controller.NewBalance()
+	decisionController := controller.NewDecision()
 
 	r := gin.Default()
 
 	r.GET("/v1/accounting-providers", func(c *gin.Context) {
-		providers, err := accountingProvider.GetProviders()
+		providers, err := accountingProviderController.GetProviders()
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, err)
 			return
 		}
-		c.JSON(http.StatusOK, providers)
+		c.JSON(http.StatusOK, gin.H{
+			"status":  0,
+			"data":    providers,
+			"message": "ok",
+		})
+	})
+	r.GET("/v1/get-balance-by-provider", func(c *gin.Context) {
+		provider := c.Query("provider")
+		balance := balanceController.GetBalanceByProvider(provider)
+		c.JSON(http.StatusOK, gin.H{
+			"status":  0,
+			"data":    balance,
+			"message": "ok",
+		})
+		return
+	})
+	r.POST("/v1/make-decision", func(c *gin.Context) {
+		var requestBody *controller.MakeDecisionRequestBody
+		err := json.NewDecoder(c.Request.Body).Decode(&requestBody)
+		defer c.Request.Body.Close()
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, err)
+			return
+		}
+
+		decision := decisionController.MakeDecision(requestBody)
+		c.JSON(http.StatusOK, gin.H{
+			"status":  0,
+			"data":    decision,
+			"message": "ok",
+		})
+		return
 	})
 
 	r.Run() // listen and serve on 0.0.0.0:8080

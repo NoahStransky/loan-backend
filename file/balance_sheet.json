@@ -1,0 +1,150 @@
+{
+  "Xero": [
+    {
+      "Year": "2022",
+      "Month": "12",
+      "ProfitOrLoss": 100,
+      "AssetsValue": 2000
+    },
+    {
+      "Year": "2022",
+      "Month": "11",
+      "ProfitOrLoss": -50,
+      "AssetsValue": 1900
+    },
+    {
+      "Year": "2022",
+      "Month": "10",
+      "ProfitOrLoss": 250,
+      "AssetsValue": 1950
+    },
+    {
+      "Year": "2022",
+      "Month": "9",
+      "ProfitOrLoss": 120,
+      "AssetsValue": 1700
+    },
+    {
+      "Year": "2022",
+      "Month": "8",
+      "ProfitOrLoss": -80,
+      "AssetsValue": 1580
+    },
+    {
+      "Year": "2022",
+      "Month": "7",
+      "ProfitOrLoss": -90,
+      "AssetsValue": 1660
+    },
+    {
+      "Year": "2022",
+      "Month": "6",
+      "ProfitOrLoss": 110,
+      "AssetsValue": 1750
+    },
+    {
+      "Year": "2022",
+      "Month": "5",
+      "ProfitOrLoss": 30,
+      "AssetsValue": 1640
+    },
+    {
+      "Year": "2022",
+      "Month": "4",
+      "ProfitOrLoss": -40,
+      "AssetsValue": 1610
+    },
+    {
+      "Year": "2022",
+      "Month": "3",
+      "ProfitOrLoss": 60,
+      "AssetsValue": 1650
+    },
+    {
+      "Year": "2022",
+      "Month": "2",
+      "ProfitOrLoss": 120,
+      "AssetsValue": 1590
+    },
+    {
+      "Year": "2022",
+      "Month": "1",
+      "ProfitOrLoss": 0,
+      "AssetsValue": 1470
+    }
+  ],
+  "MYOB": [
+    {
+      "Year": "2022",
+      "Month": "12",
+      "ProfitOrLoss": 1000,
+      "AssetsValue": 66000
+    },
+    {
+      "Year": "2022",
+      "Month": "11",
+      "ProfitOrLoss": -500,
+      "AssetsValue": 65000
+    },
+    {
+      "Year": "2022",
+      "Month": "10",
+      "ProfitOrLoss": 2500,
+      "AssetsValue": 65500
+    },
+    {
+      "Year": "2022",
+      "Month": "9",
+      "ProfitOrLoss": 1200,
+      "AssetsValue": 63000
+    },
+    {
+      "Year": "2022",
+      "Month": "8",
+      "ProfitOrLoss": 3800,
+      "AssetsValue": 61800
+    },
+    {
+      "Year": "2022",
+      "Month": "7",
+      "ProfitOrLoss": -2900,
+      "AssetsValue": 58000
+    },
+    {
+      "Year": "2022",
+      "Month": "6",
+      "ProfitOrLoss": 1100,
+      "AssetsValue": 60900
+    },
+    {
+      "Year": "2022",
+      "Month": "5",
+      "ProfitOrLoss": 3300,
+      "AssetsValue": 59800
+    },
+    {
+      "Year": "2022",
+      "Month": "4",
+      "ProfitOrLoss": -1400,
+      "AssetsValue": 56500
+    },
+    {
+      "Year": "2022",
+      "Month": "3",
+      "ProfitOrLoss": 2600,
+      "AssetsValue": 57900
+    },
+    {
+      "Year": "2022",
+      "Month": "2",
+      "ProfitOrLoss": 5300,
+      "AssetsValue": 55300
+    },
+    {
+      "Year": "2022",
+      "Month": "1",
+      "ProfitOrLoss": 0,
+      "AssetsValue": 50000
+    }
+  ]
+}

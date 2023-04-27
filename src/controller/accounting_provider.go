@@ -17,7 +17,9 @@ func NewAccountingProvider(engine *xorm.Engine) *AccountingProvider {
 
 func (c *AccountingProvider) GetProviders() ([]model.AccountingProvider, error) {
 	var providers []model.AccountingProvider
-	err := c.engine.Find(&providers)
+	err := c.engine.Find(&providers, &model.AccountingProvider{
+		IsDeleted: false,
+	})
 	if err != nil {
 		return nil, err
 	}

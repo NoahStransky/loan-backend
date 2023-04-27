@@ -16,8 +16,9 @@ services:
     ports:
       - "8080:8080"
     environment:
+      - ENV=production
       - DB_CLIENT=pg
-      - PG_HOST=localhost
+      - PG_HOST=postgres
       - PG_PORT=5432
       - PG_DATABASE=loan-db
       - PG_USER=demyst

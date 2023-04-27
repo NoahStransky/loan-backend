@@ -15,17 +15,15 @@ const retryTimes = 10
 func CreateConnection(driveName, host, port, user, password, database string) *xorm.Engine {
 	dbinfo := fmt.Sprintf("host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
 		host, port, user, password, database)
-
 	engine, err := xorm.NewEngine(driveName, dbinfo)
 	if err != nil {
 		panic(err)
 	}
 	if err := engine.Ping(); err != nil {
-		for i := 0; i < retryTimes; i++ {
-			fmt.Println("reconnecting... for ", i+1, " times")
+		for i := 1; i <= retryTimes; i++ {
 			engine, err = xorm.NewEngine(driveName, dbinfo)
-			if err != nil {
-				if i == 10 {
+			if err = engine.Ping(); err != nil {
+				if i == retryTimes {
 					panic(err)
 				}
 				time.Sleep(1 * time.Second)

@@ -1,0 +1,21 @@
+mode: set
+bernie.top/demyst/loan-backend/src/thirdparty/accounting_software.go:23.61,24.16 1 1
+bernie.top/demyst/loan-backend/src/thirdparty/accounting_software.go:27.2,30.3 2 1
+bernie.top/demyst/loan-backend/src/thirdparty/accounting_software.go:24.16,26.3 1 0
+bernie.top/demyst/loan-backend/src/thirdparty/accounting_software.go:33.62,37.16 4 1
+bernie.top/demyst/loan-backend/src/thirdparty/accounting_software.go:41.2,43.15 3 1
+bernie.top/demyst/loan-backend/src/thirdparty/accounting_software.go:37.16,40.3 2 0
+bernie.top/demyst/loan-backend/src/thirdparty/accounting_software.go:46.82,49.2 2 1
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:28.42,30.2 1 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:32.91,38.27 3 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:60.2,60.15 1 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:39.18,40.3 1 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:44.21,45.3 1 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:51.20,52.3 1 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:40.3,43.4 2 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:45.3,46.24 1 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:49.4,49.17 1 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:46.24,48.5 1 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:52.3,53.24 1 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:57.4,57.17 1 0
+bernie.top/demyst/loan-backend/src/thirdparty/decision_engine.go:53.24,56.5 1 0
